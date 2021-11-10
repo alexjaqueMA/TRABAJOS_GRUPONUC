@@ -3,47 +3,98 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 </style>*/
 
+
+/*Declaramos los valores estandares de margen y bordes, para la pagina a nivel general*/
 * {
     margin: 0px;
-    padding: 0px;
-    box-sizing: 0px;
+    padding: 20px;
+    box-sizing: 10px;
 }
 
-
+/* estamos delclarando que h3(titulos) tengan color blanco*/
 h3 {
     color: hsl(0, 0%, 95%) ;
 }
 
 
+/* estamos delclarando que h2(texto) tengan color blanco*/
+h2 {
+    color: hsl(0, 0%, 95%);
+}
+
+/*se declara el elemento "padre"(llamado union en este caso)los valores y posiciones generales
+que contendra a los 3 elementos hijos utilizando flexbox*/
 
 .union{
-     background-color: hsla(0, 0%, 100%, 0.75) ;
+    background-color: hsla(0, 0%, 100%, 0.75) ;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    align-content: center;
+
 }
 
+
+
+/* declaramos un div-class llamado tit para darle el tamaño correspondiente y la fuente
+solicitada a los titulos*/
+
+.tit {
+    font-family: Big Shoulders Display;
+    text-align: left;
+    font-weight: 700;
+}
+
+/* declaramos un div-class llamado texto para darle el tamaño correspondiente y la fuente
+solicitada a los textos segun el enunciado*/
+.texto{
+    font-family: Lexend Deca ;
+    font-size: 15;
+    text-align: left;
+    font-weight: 400;
+}
+
+/*aquí empezamos a declarar el tamaño de cada columna y el color que utilizara cada columna-elemento*/
 .sedans {
     background-color: hsl(31, 77%, 52%)
     ;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
+    width: 300px;
+    height: 550px;
+    border-bottom-left-radius: 1.5%;
+    border-top-left-radius: 1.5%;
     
 }
+
 
 .suvs {
         
     background-color: hsl(184, 100%, 22%)
     ;
+    width: 300px;
+    height: 550px;
 
 }
 
 .luxury{
     background-color: hsl(179, 100%, 13%);
-
+    width: 300px;
+    height: 550px;
+    border-bottom-right-radius: 1.5% ;
+    border-top-right-radius: 1.5%;
 }
+
+/*editamos de acuerdo a lo mencionado en el enunciado, los botones bottom(contienen learn more)
+para darle el borde correspondiente, y el tamaño adecuado*/
+
+.learn {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px ;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 150px;
+    height: 40px;
+    color: hsl(31, 77%, 52%);
+    font-size: 17px;
+    
+}
+
