@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet"  href="./styles.css" > 
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+<!--primero declaramos el elemento padre que controlara a los demas elementos dentro del css-->
+  <div class="union"> 
+         
+       <!--en segundo lugar declararemos los elementos hijos(sedans,suvs y luxury)
+      cada cual con sus funcionalidades correspondiente que se relacionaran con styles.css
+
+      RECORDAR QUE LA ETIQUETA CLASS SE USA PARA LLAMAR A UNA FUNCION EN CSS, ES DECIR CADA VEZ QUE APARESCA CLASS
+      ES POR QUE ESTA RELACIONADO CON ALGUNA ETIQUETA EN CSS-->
+
+            <div class="sedans">
+
+                  <!--se declara la etiqueta img por sobre los contenidos h2 y p, para que el contenido
+                  imagen quede por sobre el texto segun el enunciado y esto se repite en cada elemento hijo-->
+
+                      <img src="./images/icon-sedans.svg" alt="imagen1" class="imagen1">
+                      <h2>
+
+                        <p class="tit">SEDANS</p>
+
+                      </h2>
+                      <h3> <p class="texto"> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+                          or on your next road trip. </p></h3>
+                      
+                          <div class="learn" >
+
+                                <div style="text-align: center;" >
+                                <b>
+                                <input type="button" value="Learn More" class="learn">
+                                </b>
+                                
+                            </div>
+                          </div>
+              </div>
+           
+
+            <div class="suvs">
+                      <img src="./images/icon-suvs.svg" alt="imagen2" class="imagen2">
+                      <h2>
+                        
+                        <p class="tit">SUVS</p> 
+
+                      </h2>
+
+                      <h3>
+
+                        <p class="texto">
+                        Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+                        and off-road adventures.</p></h3>
+                          <div class="learn">
+                            <div style="text-align: center;">
+              
+                                <input type="button" value="Learn More" class="learn">
+                              
+                            </div>
+                          </div>
+            </div>
+
+            <div class="luxury">
+                      <img src="./images/icon-luxury.svg" alt="imagen2" class="imagen3">
+                      <h2>
+
+                          <p class="tit">LUXURY</p>
+
+                      </h2>
+
+                      <h3><p class="texto"> Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+                          rental and arrive in style.</p></h3>
+                          <div class="learn">
+                            <div style="text-align: center;">
+              
+                                <input type="button" value="Learn More" class="learn">
+                              
+                            </div>
+                          </div>
+            </div>
+    
+</div>
+
+</body>
+
+</html>
